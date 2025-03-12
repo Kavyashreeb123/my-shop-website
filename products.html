@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">My Shop</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">View Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products" class="product-list">
+        <h2>Our Products</h2>
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Product 1 -->
+                <tr>
+                    <td><img src="https://media.croma.com/image/upload/h_300,w_300/v1718793505/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/275815_0_gkxnwp.png" alt="Wireless Headphones"></td>
+                    <td>Wireless Headphones</td>
+                    <td>$50.00</td>
+                    <td><button onclick="addToCart('Wireless Headphones')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 2 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.qfh1f7nWdqMIDXySs3_Z-wHaHa?rs=1&pid=ImgDetMain" alt="Smartwatch"></td>
+                    <td>Smartwatch</td>
+                    <td>$120.00</td>
+                    <td><button onclick="addToCart('Smartwatch')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 3 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.SypbRbESMn1FWNQrIFIEbAAAAA?rs=1&pid=ImgDetMain" alt="Bluetooth Speaker"></td>
+                    <td>Bluetooth Speaker</td>
+                    <td>$40.00</td>
+                    <td><button onclick="addToCart('Bluetooth Speaker')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 4 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.mxm2iY5bfiaQ-_Xu2K9eJAHaHa?rs=1&pid=ImgDetMain" alt="Smartphone Case"></td>
+                    <td>Smartphone Case</td>
+                    <td>$15.00</td>
+                    <td><button onclick="addToCart('Smartphone Case')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 5 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.N3tdZhmpLtNi8FVhFMwC_gAAAA?rs=1&pid=ImgDetMain" alt="Portable Charger"></td>
+                    <td>Portable Charger</td>
+                    <td>$25.00</td>
+                    <td><button onclick="addToCart('Portable Charger')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 6 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.k46WNDMUIe4F6rmroJVsPAHaHa?rs=1&pid=ImgDetMain" alt="Gaming Mouse"></td>
+                    <td>Gaming Mouse</td>
+                    <td>$30.00</td>
+                    <td><button onclick="addToCart('Gaming Mouse')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 7 -->
+                <tr>
+                    <td><img src="https://www.eclairage-design.com/17221-large_default/blue-desk-lamp.jpg" alt="LED Desk Lamp"></td>
+                    <td>LED Desk Lamp</td>
+                    <td>$35.00</td>
+                    <td><button onclick="addToCart('LED Desk Lamp')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 8 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.OawOWKepfUl4RiQrGi2RAQHaDL?rs=1&pid=ImgDetMain" alt="Ergonomic Keyboard"></td>
+                    <td>Ergonomic Keyboard</td>
+                    <td>$60.00</td>
+                    <td><button onclick="addToCart('Ergonomic Keyboard')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 9 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.uDSBhQ9RCwbyS9Vj-kd99AHaHa?rs=1&pid=ImgDetMain" alt="4K Monitor"></td>
+                    <td>4K Monitor</td>
+                    <td>$350.00</td>
+                    <td><button onclick="addToCart('4K Monitor')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 10 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.Y34ZhoQ-8e9u3BL-NT6ZvwHaFj?rs=1&pid=ImgDetMain" alt="Wireless Mouse"></td>
+                    <td>Wireless Mouse</td>
+                    <td>$20.00</td>
+                    <td><button onclick="addToCart('Wireless Mouse')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 11 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.1GH3V-thRlOXIr_L517P_wHaHa?rs=1&pid=ImgDetMain" alt="USB Flash Drive"></td>
+                    <td>USB Flash Drive</td>
+                    <td>$12.00</td>
+                    <td><button onclick="addToCart('USB Flash Drive')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 12 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.WbSIB3cc4WQEUmR-8q9oDgHaGU?rs=1&pid=ImgDetMain" alt="Smart Light Bulb"></td>
+                    <td>Smart Light Bulb</td>
+                    <td>$18.00</td>
+                    <td><button onclick="addToCart('Smart Light Bulb')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 13 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.Y4L2qHc-SUSZ1OgSgH4x_QHaHa?rs=1&pid=ImgDetMain" alt="Fitness Tracker"></td>
+                    <td>Fitness Tracker</td>
+                    <td>$45.00</td>
+                    <td><button onclick="addToCart('Fitness Tracker')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 14 -->
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/61OVqNnFOuL._SL1500_.jpg" alt="Bluetooth Earbuds"></td>
+                    <td>Bluetooth Earbuds</td>
+                    <td>$40.00</td>
+                    <td><button onclick="addToCart('Bluetooth Earbuds')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 15 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.vpeLC1dKx9Sah2RSa89AtgHaHa?rs=1&pid=ImgDetMain" alt="Wireless Charger"></td>
+                    <td>Wireless Charger</td>
+                    <td>$25.00</td>
+                    <td><button onclick="addToCart('Wireless Charger')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 16 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.EemZ_PS8zGhqcb1o_JNHZwAAAA?rs=1&pid=ImgDetMain" alt="Camera Lens"></td>
+                    <td>Camera Lens</td>
+                    <td>$100.00</td>
+                    <td><button onclick="addToCart('Camera Lens')">Add to Cart</button></td>
+                </tr>
+                <!-- Product 17 -->
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.9rWRZNIsnL3zHJ0Hqz2SjwHaHN?rs=1&pid=ImgDetMain" alt="Car Mount for Phone"></td>
+                    <td>Car Mount for Phone</td>
+                    <td>$20.00</td>
+                    <td><button onclick="addToCart('Car Mount for Phone')">Add to Cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Shop. All rights reserved.</p>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and General Background */
+body {
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);  /* Light gradient for a softer feel */
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;  /* Full height of the screen */
+    display: flex;
+    flex-direction: column;  /* Allows the footer to be pushed to the bottom */
+}
+
+/* Header Styling */
+header {
+    background-color: #2e74b5; /* Deep blue for the header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f1f1f1; /* Lighter color on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Add fade-in effect for all sections */
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #2e74b5;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Home Page Styling */
+#home {
+    background-color: #f4f9fc; /* Light background for home */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Shop Now Button (Home Page) */
+#shop-now-btn {
+    background-color: #2e74b5;  /* Blue button */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#shop-now-btn:hover {
+    background-color: #1d4d8f;
+}
+
+/* Contact & About Page Styles */
+#contact, #about {
+    background-color: #ffffff;  /* White background for contrast */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Section */
+#products {
+    padding: 40px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+#products h2 {
+    color: #2e74b5;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Product Table */
+.product-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-table th, .product-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #2e74b5;
+    color: white;
+}
+
+.product-table td button {
+    background-color: #2e74b5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-table td button:hover {
+    background-color: #1d4d8f;
+}
+
+/* Product Image Styling */
+.product-table td img {
+    max-width: 120px;  /* Make the product images smaller */
+    max-height: 120px; /* Ensure the height is also constrained */
+    object-fit: contain;  /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the images */
+}
+
+/* Cart Section */
+#cart {
+    padding: 40px;
+    text-align: center;
+}
+
+#cart h2 {
+    color: #2e74b5;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.cart-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #2e74b5;
+    color: white;
+}
+
+.cart-table td button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-table td button:hover {
+    background-color: #cc3333;
+}
+
+#cart-items td button {
+    background-color: #2e74b5;  /* Make Remove button blue */
+    color: white;
+}
+
+/* Total Styling */
+#cart-total {
+    font-size: 1.5rem;
+    font-weight: bold;  /* Bold the total */
+    margin-top: 20px;
+}
+
+/* Footer Styling (Product Page & Cart) */
+footer {
+    background-color: #2e74b5;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: auto; /* Push footer to bottom */
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    .product-table {
+        width: 100%;
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+    }
+}
+
+/* Button Animation */
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Hover Effects for Navigation Links */
+header nav ul li a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff4d4d;
+    transform: translateY(-3px);
+}
+
+/* Fade-in Effect */
+section h2, section p, table {
+    animation: fadeIn 1.5s ease-out;
+}
